@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class TableViewController: UITableViewController {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,8 +30,8 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-            //let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
-            //(segue.destinationViewController as! DetailViewController).detailItem = object
+                let song = Album().songs[indexPath.row]
+                (segue.destinationViewController as! DetailViewController).song = song
             }
         }
     }
