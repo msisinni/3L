@@ -25,6 +25,7 @@ class DetailViewController: UIViewController {
             avPlayerViewController.player = player
         }
         textView.text = song!.story!
+//        textView.font = UIFont(name: textView.font.fontName, size: 18)
     }
 
     override func didReceiveMemoryWarning() {
