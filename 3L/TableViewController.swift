@@ -9,24 +9,13 @@
 import UIKit
 import CoreData
 
+//Handles displaying the titles of the songs in cells, and passing song objects to detail views
+
 class TableViewController: UITableViewController {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
     // MARK: - Segues
-
+    //Pass the proper song object to the detailview
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {

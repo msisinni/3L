@@ -16,9 +16,9 @@
 		9A238A7B1B496F560040899D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A238A791B496F560040899D /* LaunchScreen.xib */; };
 		9A238A871B496F560040899D /* _LTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A238A861B496F560040899D /* _LTests.swift */; };
 		9A356C311B498632001D098E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A356C301B498632001D098E /* MasterViewController.swift */; };
-		9A356C351B4B0D81001D098E /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A356C341B4B0D81001D098E /* SongViewController.swift */; };
 		9A356C391B4B1424001D098E /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A356C381B4B1424001D098E /* MusicData.swift */; };
-		9A356C401B4B273E001D098E /* You_Got.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A356C3F1B4B273E001D098E /* You_Got.mp3 */; };
+		9AB490801B4C2F2D00AB5BE0 /* You_Got.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AB4907F1B4C2F2D00AB5BE0 /* You_Got.mp3 */; };
+		9AB490811B4C2F2D00AB5BE0 /* You_Got.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AB4907F1B4C2F2D00AB5BE0 /* You_Got.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,8 @@
 		9A238A851B496F560040899D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A238A861B496F560040899D /* _LTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _LTests.swift; sourceTree = "<group>"; };
 		9A356C301B498632001D098E /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9A356C341B4B0D81001D098E /* SongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		9A356C381B4B1424001D098E /* MusicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
-		9A356C3F1B4B273E001D098E /* You_Got.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = You_Got.mp3; path = ../../Downloads/You_Got.mp3; sourceTree = "<group>"; };
+		9AB4907F1B4C2F2D00AB5BE0 /* You_Got.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = You_Got.mp3; path = 3L/You_Got.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +70,7 @@
 		9A238A5D1B496F560040899D = {
 			isa = PBXGroup;
 			children = (
-				9A356C3F1B4B273E001D098E /* You_Got.mp3 */,
+				9AB4907F1B4C2F2D00AB5BE0 /* You_Got.mp3 */,
 				9A238A681B496F560040899D /* 3L */,
 				9A238A831B496F560040899D /* 3LTests */,
 				9A238A671B496F560040899D /* Products */,
@@ -100,7 +99,6 @@
 				9A238A6D1B496F560040899D /* _L.xcdatamodeld */,
 				9A238A691B496F560040899D /* Supporting Files */,
 				9A356C301B498632001D098E /* MasterViewController.swift */,
-				9A356C341B4B0D81001D098E /* SongViewController.swift */,
 			);
 			path = 3L;
 			sourceTree = "<group>";
@@ -210,10 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A356C401B4B273E001D098E /* You_Got.mp3 in Resources */,
 				9A238A761B496F560040899D /* Main.storyboard in Resources */,
 				9A238A7B1B496F560040899D /* LaunchScreen.xib in Resources */,
 				9A238A781B496F560040899D /* Images.xcassets in Resources */,
+				9AB490801B4C2F2D00AB5BE0 /* You_Got.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB490811B4C2F2D00AB5BE0 /* You_Got.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +234,6 @@
 				9A238A6F1B496F560040899D /* _L.xcdatamodeld in Sources */,
 				9A356C391B4B1424001D098E /* MusicData.swift in Sources */,
 				9A238A6C1B496F560040899D /* AppDelegate.swift in Sources */,
-				9A356C351B4B0D81001D098E /* SongViewController.swift in Sources */,
 				9A238A711B496F560040899D /* TableViewController.swift in Sources */,
 				9A238A731B496F560040899D /* DetailViewController.swift in Sources */,
 			);

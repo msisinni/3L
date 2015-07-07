@@ -10,27 +10,40 @@ import UIKit
 import AVKit
 import AVFoundation
 
+
+//Takes a song object and then displays it's properties: 
+//title via the label in the navigation bar
+//cover art via an imageview
+//sound via an AVPlayer
+//and the story via a textview
 class DetailViewController: UIViewController {
     
     var song: Song?
+    var avPlayerViewController: AVPlayerViewController?
 
     @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationController!.navigationBarHidden = false;
-        let avPlayerViewController = self.childViewControllers.first as! AVPlayerViewController
+        self.title = song!.title!
+        avPlayerViewController = self.childViewControllers.first as? AVPlayerViewController
         dispatch_async(dispatch_get_main_queue()) {
-            let player = AVPlayer(URL: NSURL(fileURLWithPath: self.song!.filename!))
-            avPlayerViewController.player = player
+            let path = NSBundle.mainBundle().pathForResource(self.song!.filename!, ofType: "mp3")!
+            
+            let player = AVPlayer(URL: NSURL(fileURLWithPath: path))
+            
+            self.avPlayerViewController!.player = player
         }
         textView.text = song!.story!
-//        textView.font = UIFont(name: textView.font.fontName, size: 18)
+        self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+    }
+    override func viewDidAppear(animated: Bool) {
+        avPlayerViewController!.player.play()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 
 
